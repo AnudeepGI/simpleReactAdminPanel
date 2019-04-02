@@ -15,89 +15,29 @@ class Icon extends React.Component {
   }
 }
 
+class IconGen extends React.Component {
+
+  // console.log(this.props);
+
+   render() {
+     // console.log(this.state)
+     console.log(this.props.name);
+
+      return (
+        <div className="font-icon-detail">
+           <i className={this.props.name} />
+          <input type="text" defaultValue={this.props.name} />
+        </div>
+      );
+   }
+}
 
 class Icon1 extends React.Component {
   render() {
      return (
        <div >
        <div className="main-panel">
-             <nav className="navbar navbar-default navbar-fixed">
-               <div className="container-fluid">
-                 <div className="navbar-header">
-                   <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                     <span className="sr-only">Toggle navigation</span>
-                     <span className="icon-bar" />
-                     <span className="icon-bar" />
-                     <span className="icon-bar" />
-                   </button>
-                   <a className="navbar-brand" href="#">Icons</a>
-                 </div>
-                 <div className="collapse navbar-collapse">
-                   <ul className="nav navbar-nav navbar-left">
-                     <li>
-                       <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                         <i className="fa fa-dashboard" />
-                         <p className="hidden-lg hidden-md">Dashboard</p>
-                       </a>
-                     </li>
-                     <li className="dropdown">
-                       <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                         <i className="fa fa-globe" />
-                         <b className="caret hidden-sm hidden-xs" />
-                         <span className="notification hidden-sm hidden-xs">5</span>
-                         <p className="hidden-lg hidden-md">
-                           5 Notifications
-                           <b className="caret" />
-                         </p>
-                       </a>
-                       <ul className="dropdown-menu">
-                         <li><a href="#">Notification 1</a></li>
-                         <li><a href="#">Notification 2</a></li>
-                         <li><a href="#">Notification 3</a></li>
-                         <li><a href="#">Notification 4</a></li>
-                         <li><a href="#">Another notification</a></li>
-                       </ul>
-                     </li>
-                     <li>
-                       <a href>
-                         <i className="fa fa-search" />
-                         <p className="hidden-lg hidden-md">Search</p>
-                       </a>
-                     </li>
-                   </ul>
-                   <ul className="nav navbar-nav navbar-right">
-                     <li>
-                       <a href>
-                         <p>Account</p>
-                       </a>
-                     </li>
-                     <li className="dropdown">
-                       <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                         <p>
-                           Dropdown
-                           <b className="caret" />
-                         </p>
-                       </a>
-                       <ul className="dropdown-menu">
-                         <li><a href="#">Action</a></li>
-                         <li><a href="#">Another action</a></li>
-                         <li><a href="#">Something</a></li>
-                         <li><a href="#">Another action</a></li>
-                         <li><a href="#">Something</a></li>
-                         <li className="divider" />
-                         <li><a href="#">Separated link</a></li>
-                       </ul>
-                     </li>
-                     <li>
-                       <a href="#">
-                         <p>Log out</p>
-                       </a>
-                     </li>
-                     <li className="separator hidden-lg hidden-md" />
-                   </ul>
-                 </div>
-               </div>
-             </nav>
+             <NavTop></NavTop>
              <div className="content">
                <div className="container-fluid">
                  <div className="row">
@@ -110,134 +50,82 @@ class Icon1 extends React.Component {
                        <div className="content all-icons">
                          <div className="row">
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-album" />
-                               <input type="text" defaultValue="pe-7s-album" />
-                             </div>
+                              <IconGen name="pe-7s-album"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-arc" />
-                               <input type="text" defaultValue="pe-7s-arc" />
-                             </div>
+                             <IconGen name="pe-7s-arc"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-back-2" />
-                               <input type="text" defaultValue="pe-7s-back-2" />
-                             </div>
+                             <IconGen name="pe-7s-back-2"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-bandaid" />
-                               <input type="text" defaultValue="pe-7s-bandaid" />
-                             </div>
+                              <IconGen name="pe-7s-bandaid"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-car" />
-                               <input type="text" defaultValue="pe-7s-car" />
-                             </div>
+                             <IconGen name="pe-7s-car"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-diamond" />
-                               <input type="text" defaultValue="pe-7s-diamond" />
-                             </div>
+                             <IconGen name="pe-7s-diamond"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-door-lock" />
-                               <input type="text" defaultValue="pe-7s-door-lock" />
-                             </div>
+                             <IconGen name="pe-7s-door-lock"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-eyedropper" />
-                               <input type="text" defaultValue="pe-7s-eyedropper" />
-                             </div>
+                             <IconGen name="pe-7s-eyedropper"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-female" />
-                               <input type="text" defaultValue="pe-7s-female" />
-                             </div>
+                             <IconGen name="pe-7s-female"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-gym" />
-                               <input type="text" defaultValue="pe-7s-gym" />
-                             </div>
+                             <IconGen name="pe-7s-gym"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-hammer" />
-                               <input type="text" defaultValue="pe-7s-hammer" />
-                             </div>
+                             <IconGen name="pe-7s-hammer"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-headphones" />
-                               <input type="text" defaultValue="pe-7s-headphones" />
-                             </div>
+                             <IconGen name="pe-7s-headphones"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-helm" />
-                               <input type="text" defaultValue="pe-7s-helm" />
-                             </div>
+                             <IconGen name="pe-7s-helm"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-hourglass" />
-                               <input type="text" defaultValue="pe-7s-hourglass" />
-                             </div>
+                             <IconGen name="pe-7s-hourglass"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-leaf" />
-                               <input type="text" defaultValue="pe-7s-leaf" />
-                             </div>
+                             <IconGen name="pe-7s-leaf"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-magic-wand" />
-                               <input type="text" defaultValue="pe-7s-magic-wand" />
-                             </div>
+                             <IconGen name="pe-7s-magic-wand"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-male" />
-                               <input type="text" defaultValue="pe-7s-male" />
-                             </div>
+                             <IconGen name="pe-7s-male"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-map-2" />
-                               <input type="text" defaultValue="pe-7s-map-2" />
-                             </div>
+                            <IconGen name="pe-7s-map-2"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-next-2" />
-                               <input type="text" defaultValue="pe-7s-next-2" />
-                             </div>
+                             <IconGen name="font-icon-detail"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-paint-bucket" />
-                               <input type="text" defaultValue="pe-7s-paint-bucket" />
-                             </div>
+                             <IconGen name="pe-7s-paint-bucket"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-pendrive" />
-                               <input type="text" defaultValue="pe-7s-pendrive" />
-                             </div>
+                             <IconGen name="pe-7s-pendrive"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-photo" />
-                               <input type="text" defaultValue="pe-7s-photo" />
-                             </div>
+                             <IconGen name="font-icon-detail"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-piggy" />
-                               <input type="text" defaultValue="pe-7s-piggy" />
-                             </div>
+                             <IconGen name="pe-7s-piggy"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-plugin" />
-                               <input type="text" defaultValue="pe-7s-plugin" />
-                             </div>
+                             <IconGen name="pe-7s-plugin"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-refresh-2" />
-                               <input type="text" defaultValue="pe-7s-refresh-2" />
-                             </div>
+                             <IconGen name="pe-7s-refresh-2"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-                             <div className="font-icon-detail"><i className="pe-7s-rocket" />
-                               <input type="text" defaultValue="pe-7s-rocket" />
-                             </div>
+                             <IconGen name="pe-7s-rocket"></IconGen>
                            </div>
                            <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
                              <div className="font-icon-detail"><i className="pe-7s-settings" />
@@ -1126,37 +1014,7 @@ class Icon1 extends React.Component {
                  </div>
                </div>
              </div>
-             <footer className="footer">
-               <div className="container-fluid">
-                 <nav className="pull-left">
-                   <ul>
-                     <li>
-                       <a href="#">
-                         Home
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#">
-                         Company
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#">
-                         Portfolio
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#">
-                         Blog
-                       </a>
-                     </li>
-                   </ul>
-                 </nav>
-                 <p className="copyright pull-right">
-                   ©  <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                 </p>
-               </div>
-             </footer>
+             <Footer></Footer>
            </div>
        </div>
      );
