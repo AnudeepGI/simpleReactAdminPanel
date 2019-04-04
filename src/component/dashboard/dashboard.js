@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Nav from '../nav';
 import NavTop from '../navtop';
 import Footer from '../footer/footer'
+import ChartistGraph from 'react-chartist';
+
+
 
 class Dashboard extends React.Component {
    render() {
@@ -16,6 +19,16 @@ class Dashboard extends React.Component {
 
 class Dashboard1 extends React.Component {
    render() {
+
+     var data = {
+           series: [
+            62,32,6
+           ]
+         };
+
+      var type = 'Pie'
+
+
       return (
         <div className="main-panel">
               <NavTop></NavTop>
@@ -29,7 +42,7 @@ class Dashboard1 extends React.Component {
                            <p className="category">Last Campaign Performance</p>
                          </div>
                          <div className="content">
-                           <div id="chartPreferences" className="ct-chart ct-perfect-fourth" />
+                         <ChartistGraph data={data} type={type} />
                            <div className="footer">
                              <div className="legend">
                                <i className="fa fa-circle text-info" /> Open
@@ -76,6 +89,9 @@ class Dashboard1 extends React.Component {
                          </div>
                          <div className="content">
                            <div id="chartActivity" className="ct-chart" />
+
+
+
                            <div className="footer">
                              <div className="legend">
                                <i className="fa fa-circle text-info" /> Tesla Model S
