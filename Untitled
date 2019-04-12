@@ -1,0 +1,7 @@
+class Table2 extends React.Component {
+  render() {
+    return (
+
+    )
+  }
+}

@@ -138,43 +138,8 @@ class User1 extends React.Component {
                   </div>
                 </div>
               </div>
-              <footer className="footer">
-                <div className="container-fluid">
-                  <nav className="pull-left">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          Home
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Company
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Portfolio
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Blog
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <p className="copyright pull-right">
-                    ©  <a href="http://www.anudeepgi.com">Anudeep GI</a>, made with love for a better web
-                  </p>
-                </div>
-              </footer>
+              <Footer/>
             </div>
-
-
-
-
-
        </div>
      );
   }
